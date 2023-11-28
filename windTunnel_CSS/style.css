@@ -1,0 +1,24 @@
+p{
+  color: green;
+  /* background-color: orange; */
+  outline-color: black;
+  outline-width: 1px;
+  outline-style: dotted;
+}
+
+#canvasWrapper{
+  /* background-color: green; */
+  outline: 2px green solid;
+}
+
+.p5name{
+  outline: 3px pink solid;
+}
+
+.captionWrapper{
+  margin: 30px;
+}
+
+.caption{
+  outline: 1px red dotted;
+}

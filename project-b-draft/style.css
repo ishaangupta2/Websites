@@ -1,0 +1,54 @@
+img{
+    width: 400px;
+    padding: 30px;
+    margin: 10px;
+
+    position: absolute;
+    right: 900px;
+    top: 100px;
+}
+
+#dialogue1{
+    font-family: 'Courier New', Courier, monospace;
+
+    width: 300px;
+    height: 200px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+
+    padding: 30px;
+    margin: 10px;
+
+    position: absolute;
+    right: 500px;
+    top: 145px;
+}
+
+#canvasWrapper{
+    padding: 30px;
+    margin: 10px;
+
+    position: absolute;
+    left: 225px;
+    top: 500px;
+}
+
+#dialogue2{
+    font-family: 'Courier New', Courier, monospace;
+
+    width: 300px;
+    height: 200px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+
+    padding: 30px;
+    margin: 10px;
+
+    position: absolute;
+    right: 500px;
+    top: 575px;
+}
