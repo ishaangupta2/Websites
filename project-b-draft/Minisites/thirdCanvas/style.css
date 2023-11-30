@@ -49,12 +49,11 @@ body{
     margin-top: 7px;
 }
 
-.speeding{
-    color: red;
+.raining{
     cursor: pointer;
 }
 
-.speeding:hover{
-    background-color: black;
+.raining:hover{
+    background-color: blueviolet;
     font-weight: bold;
 }
