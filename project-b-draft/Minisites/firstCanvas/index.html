@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5 in html!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link the p5 library  -->
+    <script src="lib/p5.js"></script>
+    <script src="lib/p5.sound.js"></script>
+</head>
+<body>
+
+<div class="sceneWrapper">
+    <div class="left">
+        <div id="canvasWrapper"></div>
+        <div class="techDetails">
+            <div class="camDirections">
+                Camera: Arri Alexa Mini, Zeiss Ultra Prime Lense
+            </div>
+            <div class="camSettings">
+                Focal length: 35 mm | Daylight
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="dialogue">
+            <div class="speaker">
+                FADE IN
+            </div>
+            <div class="chrDialogue">
+                A highway amidst an open field.
+            </div>
+            <div class="speaker">
+                BEAT
+            </div>
+            <div class="chrDialogue">
+                A car <span class="speeding" onclick="pressedSpeeding()">SPEEDS</span> by the camera.
+            </div>
+        
+        </div>
+    </div>
+ 
+   
+</div>
+    <!-- the js file should be included as the last thing in the body -->
+    <script src="sketch.js"></script>
+</body>
+</html>
