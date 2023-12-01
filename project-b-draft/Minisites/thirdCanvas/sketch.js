@@ -14,24 +14,31 @@ function setup() {
   let cnv = createCanvas(400,235);
   cnv.parent("canvasWrapper");
 
-  for (let i = 0; i < dropCount; i++){
-    rainDrops[i] = new Rainfall(random(0, 400), -10);
   }
 
-}
-
 function draw() {
-   background(0);
-   image(backgroundImage, -10, -10, 430, 260);
+  background(0);
+  image(backgroundImage, -10, -10, 430, 260);
 
-    if (mouseIsPressed === true) {
-    for (let i = 0; i < rainDrops.length; i++){
-      rainDrops[i].display();
-      rainDrops[i].update();
-    }} else {
-      background(0);
-      image(backgroundImage, -10, -10, 430, 260);
+  if (mouseIsPressed === true) {
+    for (let i = 0; i < dropCount; i++){
+      rainDrops.push(new Rainfall(random(0, 400), -10));
+  }
+
+  if (rainDrops.length > 0) {
+      for (let i = 0; i < dropCount; i++){
+        let rainDrop = rainDrops[i];
+        rainDrop.display();
+        rainDrop.update();
+        rainDrop.checkEdges();
+    } 
+  }
+  for (let i = rainDrops.length -1; i >= 0; i--){
+    let rainDrop = rainDrops[i];
+    if (rainDrops.length > 0 && rainDrop.isDone){
+      rainDrops.splice(i, rainDrops.length);
     }
+  }
 
 }
 
@@ -39,8 +46,9 @@ class Rainfall{
   constructor(startX, startY){
     this.x = startX;
     this.y = startY;
-    this.dropLength = random(5, 10);
     this.dropSpeed = random(1, 5);
+
+    this.isDone = false;
   }
 
   update(){
@@ -60,4 +68,10 @@ class Rainfall{
     pop();
   }
 
+  checkEdges(){
+    if (this.y > height){
+      this.isDone = true;
+    }
+  }
+}
 }
