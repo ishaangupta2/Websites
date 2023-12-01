@@ -24,6 +24,7 @@ function draw() {
     for (let i = 0; i < dropCount; i++){
       rainDrops.push(new Rainfall(random(0, 400), -10));
   }
+}
 
   if (rainDrops.length > 0) {
       for (let i = 0; i < dropCount; i++){
@@ -74,4 +75,4 @@ class Rainfall{
     }
   }
 }
-}
+
