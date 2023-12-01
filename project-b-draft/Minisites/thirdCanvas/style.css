@@ -27,7 +27,7 @@ body{
 
 .sceneWrapper{
     width: 800px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
     display: flex;
     justify-content: space-between;
