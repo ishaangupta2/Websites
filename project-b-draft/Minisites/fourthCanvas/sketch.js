@@ -1,12 +1,18 @@
 console.log("js is linked!");
 
 let backgroundImage;
+let newBackground;
+
+let timer = 1;
 
 let rainDrops = [];
 let dropCount = 70;
 
+let buttonWasPressed = false;
+
 function preload(){
   backgroundImage = loadImage("scarecrow.png");
+  newBackground = loadImage("scarecrowClose.png");
 
 }
 
@@ -24,10 +30,25 @@ function draw() {
    background(0);
    image(backgroundImage, -10, -10, 430, 260);
 
+   if (buttonWasPressed == true){
+    background(0);
+    if (frameCount % 60 == 0 && timer > 0) {
+      timer --;
+    }
+    if (timer == 0) {
+      image(newBackground, -10, -10, 430, 260);
+    }
+  }
+
     for (let i = 0; i < rainDrops.length; i++){
       rainDrops[i].display();
       rainDrops[i].update();
     }
+
+}
+
+function pressedBlinking() {
+  buttonWasPressed = true;
 
 }
 

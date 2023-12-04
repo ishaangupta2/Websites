@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5 in html!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link the p5 library  -->
+    <script src="lib/p5.js"></script>
+    <script src="lib/p5.sound.js"></script>
+</head>
+<body>
+
+<div class="sceneWrapper">
+    <div class="left">
+        <div id="canvasWrapper"></div>
+        <div class="techDetails">
+            <div class="camDirections">
+                Camera: Arri Alexa LF, Zeiss Ultra Prime Lense
+            </div>
+            <div class="camSettings">
+                MEDIUM CLOSE UP | Focal length: 65 mm
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="dialogue">
+            <div class="chrDialogue">
+                PRABHU closes his eyes, takes a deep breath, and opens them again.
+            </div>
+            <div class="speaker">
+                BEAT
+            </div>
+            <div class="chrDialogue">
+                The scarecrow has come closer! PRABHU catches a humanlike face and hears an oddly familiar voice.
+            </div>
+            <div class="speaker">
+                SCARECROW
+            </div>
+            <div class="chrDialogue">
+                <span class="speaking" onclick="pressedHello()">Hello?</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- the js file should be included as the last thing in the body -->
+    <script src="sketch.js"></script>
+</body>
+</html>

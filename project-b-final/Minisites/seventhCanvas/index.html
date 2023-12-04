@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5 in html!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link the p5 library  -->
+    <script src="lib/p5.js"></script>
+    <script src="lib/p5.sound.js"></script>
+</head>
+<body>
+
+<div class="sceneWrapper">
+    <div class="left">
+        <div id="canvasWrapper"></div>
+        <div class="techDetails">
+            <div class="camDirections">
+                CLOSE UP, shallow focus on PRABHU. Slight foliage in background.
+            </div>
+            <div class="camSettings">
+                Focal length: 85 mm
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="dialogue">
+            <div class="chrDialogue">
+                PRABHU is <span class="thinking" onclick="pressedThoughtBubble()">visibly shaken</span>, unable to speak.
+            </div>
+            <div class="speaker">
+                SCARECROW (O.S.)
+            </div>
+            <div class="chrDialogue">
+                When you fired me from your office, I had nowhere to go. I came out here to find work on a farm. I gave this shirt to my son. He now uses it on a scarecrow to protect his fields.
+            </div>
+            <div class="speaker">
+                SCARECROW (CONTD.)
+            </div>
+            <div class="chrDialogue">
+                All these years, you didn't believe me. I didn't steal your watch, PRABHU Ji.
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- the js file should be included as the last thing in the body -->
+    <script src="sketch.js"></script>
+</body>
+</html>
